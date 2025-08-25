@@ -1,22 +1,27 @@
-# Parallel Arithmetic Unit (PAU) 
+# Parallel Arithmetic Unit (PAU) — ECE 242 Final Project
 
 **Report:** [ECE242_Final_Report.pdf](./ECE242_Final_Report.pdf)  
-**Course:** Digital Systems Testing and Testable Design (ECE 242)  
+**Course:** Digital Systems Testing and Testable Design
 **Title:** Design, Verification, and Testing of a Parallel Arithmetic Unit  
-**Author:** Saachi Jaiswal • **Advisor:** Dr. Reza Raeisi • **Date:** May 2024
+**Author:** Saachi Jaiswal  
+**Date:** May 2024  
+
+---
 
 ## 📖 Summary
-Combinational **Parallel Arithmetic Unit (PAU)** that performs **multiplication + addition in parallel** (no MAC-style sequencing). Verified in **ModelSim**, synthesized with **Synopsys Design Compiler** (NanGate 45nm), then **post-synthesis simulation** and **ATPG with Synopsys TetraMAX** for stuck-at fault coverage.  [oai_citation:2‡Saachi_242_Final_Report.pdf](file-service://file-QHCw6qqnLN2T5k5FMBRPVm)
+This project presents the **design, verification, synthesis, and testing** of a **Parallel Arithmetic Unit (PAU)** that integrates an adder and a multiplier in a fully combinational design.  
 
-## 📂 Structure
-- `verilog/` — RTL & testbench  
-  - `Multiplier.v`, `Adder.v`, `p_unit.v`, `tb_p_unit.v`
-- `modelsim/` — project/run scripts and wave configs (optional)
-- `synthesis_dc/` — DC scripts & reports (`.vg`, `.area`, `.pow`, `.timing`)
-- `post_synth_sim/` — gate-level sim files + libraries
-- `tetramax_atpg/` — TetraMAX TCL, logs, and generated **test patterns**
-- `figures/` — waveform screenshots & schematic views
-- `ECE242_Final_Report.pdf` — full write-up
+The work includes:
+- Verilog design of adder, multiplier, and integrated PAU module  
+- Functional verification in **ModelSim**  
+- Synthesis using **Synopsys Design Compiler** with NanGate 45nm library  
+- Post-synthesis simulation for gate-level verification  
+- **ATPG (Automatic Test Pattern Generation)** using **Synopsys TetraMAX** for fault coverage analysis  
 
-## 🛠️ Tools
-ModelSim 10.5b • Synopsys DC / Design Vision • Synopsys TetraMAX • NanGate 45nm OCL.  [oai_citation:3‡Saachi_242_Final_Report.pdf](file-service://file-QHCw6qqnLN2T5k5FMBRPVm)
+---
+
+## 📂 Repository
+- `ECE242_Final_Report.pdf` → full write-up including RTL code, testbenches, waveforms, synthesis results, and ATPG coverage.
+- ## 📚 Citation
+If you reference this work, please cite:  
+> Jaiswal, S. *Design, Verification, and Testing of a Parallel Arithmetic Unit*, ECE 242 Final Project, May 2024.
